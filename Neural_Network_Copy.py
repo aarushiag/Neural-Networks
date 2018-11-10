@@ -31,8 +31,8 @@ class layer:
             self.activation_function = "Softmax"
             
         else:
-            self.weight = np.random.normal(0, 0.001, size=(num_nodes[layer_num], num_nodes[layer_num+1]))
-            self.bias = np.random.normal(0, 0.001, size=(1, num_nodes[layer_num+1]))
+            self.weight = np.random.normal(0, 0.1, size=(num_nodes[layer_num], num_nodes[layer_num+1]))
+            self.bias = np.random.normal(0, 0.1, size=(1, num_nodes[layer_num+1]))
             self.changed_weight = np.zeros((num_nodes[layer_num], num_nodes[layer_num+1]),dtype = float)
             self.changed_bias = np.zeros((1, num_nodes[layer_num+1]),dtype = float)
         
